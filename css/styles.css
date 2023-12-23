@@ -3,7 +3,6 @@ html, body {
   margin: 0;
   padding: 0;
   font-size: 20px;
-
   overflow-x: hidden;
 }
 
@@ -11,17 +10,17 @@ html, body {
 
 .background-container{
   display: grid;
-  grid-template-columns: 1fr; /* Eine Spalte */
+  grid-template-columns: 1fr;
   grid-template-rows: auto;
-  gap: 20px; /* Abstand zwischen den Elementen im Grid */
+  gap: 20px;
   background-color: #f2f2f2;
 }
 
 .header-container {
   display: grid;
-  grid-template-columns: 1fr; /* Zwei Spalten mit gleicher Breite */
-  gap: 20px; /* Abstand zwischen den Elementen im Grid */
-  justify-items: space-between; /* Ausrichtung der Elemente in den Spalten */
+  grid-template-columns: 1fr;
+  gap: 20px;
+  justify-content: space-between;
 }
 
 
@@ -34,8 +33,6 @@ html, body {
   height: 200px;
 }
 
-
-
 nav {
   position: fixed;
   top: 0px;
@@ -46,10 +43,9 @@ nav {
 
 .nav-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Drei Spalten mit gleicher Breite */
-  gap: 20px; /* Abstand zwischen den Elementen im Grid */
-  align-items: center; /* Vertikale Ausrichtung der Elemente */
-
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  align-items: center;
 }
 
 
@@ -90,8 +86,8 @@ nav {
 
 .warenkorb-container {
   display: grid;
-  grid-template-columns: 1fr; /* Erste Spalte automatische Breite, Zweite Spalte nimmt den restlichen verfügbaren Platz ein */
-  align-items: center; /* Vertikale Ausrichtung der Elemente */
+  grid-template-columns: 1fr;
+  align-items: center;
   position: fixed;
   top: 0;
   right: 20px;
@@ -115,19 +111,19 @@ nav {
 
 
 
-.tuning-container {
+.transporter-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr; /* Zwei Spalten mit gleicher Breite */
-  grid-gap: 20px; /* Abstand zwischen den Elementen */
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
 }
 
 
-.tuning-section {
+.transporter-section {
   flex: 1;
   padding: 20px;
 }
 
-.tuning-section article {
+.transporter-section article {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -141,7 +137,7 @@ nav {
 }
 
 
-.tuning-section button {
+.transporter-section button {
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -150,9 +146,11 @@ nav {
 
 .contact-container {
   display: grid;
-  grid-template-columns: 1fr; /* Zwei Spalten mit gleicher Breite */
-  grid-gap: 20px; /* Abstand zwischen den Elementen */
+  grid-template-columns: 2fr;
+  place-items: center;
+  grid-gap: 20px;
   margin-top: 50px;
+  
 }
 
 
@@ -160,9 +158,9 @@ nav {
 
 /* Stile für das Kontaktformular */
 form {
-  max-width: 400px;
+  max-width: 800px;
   margin: 0;
-
+  width: 800px;
   padding: 20px;
   background-color: #f2f2f2;
   border-radius: 10px;
@@ -184,6 +182,7 @@ textarea {
   border-radius: 5px;
   background-color: #ffffff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
 }
 
 textarea {
@@ -206,8 +205,8 @@ button[type="submit"]:hover {
 
 .footer-container {
   display: grid;
-  grid-template-columns: 1fr; /* Drei Spalten mit gleicher Breite */
-  grid-gap: 10px; /* Abstand zwischen den Elementen */
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
   font-size: 16px;
   margin-left: 10px;
 }
@@ -249,40 +248,40 @@ button[type="submit"]:hover {
 }
 
     .header-container {
-      width: 100vw; /* Breite auf 100% der Viewport-Breite setzen */
+      width: 100vw;
       display: grid;
-      grid-template-columns: 1fr; /* Eine Spalte mit flexibler Breite */
-      gap: 20px; /* Abstand zwischen den Elementen im Grid */
-      justify-items: center; /* Zentriert den Inhalt horizontal im Grid-Element */
+      grid-template-columns: 1fr;
+      gap: 20px;
+      justify-items: center;
     }
 
     .header-class {
-      width: 100%; /* Volle Breite für den Header-Inhalt */
+      width: 100%;
       padding: 20px;
       border-radius: 10px;
       height: 200px;
       display: flex;
-      justify-content: center; /* Zentriert den Text horizontal innerhalb des Headers */
-      align-items: center; /* Zentriert den Text vertikal innerhalb des Headers */
+      justify-content: center;
+      align-items: center;
     }
 
     .image-container{
-      width: 100vw; /* Breite auf 100% der Viewport-Breite setzen */
+      width: 100vw;
       display: grid;
-      place-items: center; /* Zentriert den Inhalt horizontal und vertikal */
+      place-items: center;
       background: linear-gradient(-45deg, #800E0E 35%, #CCCDD8 65%);
 
-      /* Füge die folgenden Zeilen hinzu, um das Grid-Layout anzupassen */
-      grid-template-columns: 1fr; /* Eine Spalte mit flexibler Breite */
-      grid-template-rows: 1fr; /* Eine Zeile mit flexibler Höhe */
-      justify-items: center; /* Zentriert den Inhalt horizontal im Grid-Element */
-      align-items: center; /* Zentriert den Inhalt vertikal im Grid-Element */
+
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      justify-items: center;
+      align-items: center;
     }
 
     .image-container img {
-      max-width: 100%; /* Maximale Breite des Bildes auf 100% des Containers setzen */
-      max-height: 100%; /* Maximale Höhe des Bildes auf 100% des Containers setzen */
-      object-fit: contain; /* Das Bild proportional im Container anzeigen */
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
     }
 
 
